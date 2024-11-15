@@ -34,15 +34,17 @@ function convertCmToYard(cm) {
     return yard;
 }
 
-
-if (!isNumber(unit)) {
-    alert("your entered input is not a number, refresh the page again to renter.");
-} else {
-    alert(`Your converted measurements:\n 
+// main driver function to display output 
+function mainDriverMethod() {
+    if (!isNumber(unit)) {
+        alert("your entered input is not a number, refresh the page again to renter.");
+    } else {
+        alert(`Your converted measurements:\n 
             centimeters: ${unit} \n
             cm to millimeter: ${convertCmToMillimeter(unit)}
             cm to meters: ${convertCmToMetre(unit)}
             cm to inches: ${convertCmToInch(unit)}
             cm to yard: ${convertCmToYard(unit)}
             `);
+    }
 }
