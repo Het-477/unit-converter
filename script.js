@@ -1,5 +1,3 @@
-// takes input form the user via prompt 
-const unit = prompt("Enter a measurement (in cm)");
 
 // Checks if the entered input is a number or not
 function isNumber(input) {
@@ -36,6 +34,9 @@ function convertCmToYard(cm) {
 
 // main driver function to display output 
 function mainDriverMethod() {
+    // takes input form the user via prompt 
+    const unit = prompt("Enter a measurement (in cm)");
+
     if (!isNumber(unit)) {
         alert("your entered input is not a number, refresh the page again to renter.");
     } else {
@@ -48,3 +49,5 @@ function mainDriverMethod() {
             `);
     }
 }
+
+mainDriverMethod()
